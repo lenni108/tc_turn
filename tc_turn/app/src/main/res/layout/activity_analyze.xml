@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AnalyzeActivity">
+
+    <!-- Top bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#696969">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/boot2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/house6"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <!-- Middle -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:background="@drawable/bknd_main7">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <!-- Pressure -->
+                <TextView
+                    android:id="@+id/pressure_percent"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/results_banner4"
+                    android:padding="5dp"
+                    android:text="Pressure Percent"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@android:color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/pressure_percent"/>
+                <ImageView
+                    android:layout_width="322dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/pressure_percent"
+                    android:src="@drawable/pressure1"/>
+                <TextView
+                    android:id="@+id/tv_pressure_precent"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#d3d3d3"
+                    android:layout_below="@id/pressure_percent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="0%"
+                    android:textStyle="bold"
+                    android:textColor="#080808"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_below="@id/pressure_percent"
+                    android:layout_marginTop="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="100%"
+                    android:textColor="#080808"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_below="@id/pressure_percent"
+                    android:layout_marginTop="50dp"/>
+
+                <!-- Turn Shape -->
+                <TextView
+                    android:id="@+id/turn_shape"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/pressure_percent"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/results_banner4"
+                    android:padding="5dp"
+                    android:text="TURN Shape"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/good_turn"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/turn_shape"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#D3D3D3"
+                    android:src="@drawable/good_turn3" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@id/turn_shape"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#D3D3D3"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/bad_turn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/good_turn"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ideal TURN"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#080808"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/good_turn"
+                    android:layout_marginRight="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Your TURN"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#080808"
+                    android:layout_alignParentRight="true"/>
+
+                <!-- Edge -->
+                <TextView
+                    android:id="@+id/edge_angle"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/good_turn"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/results_banner4"
+                    android:padding="5dp"
+                    android:text="Edge Angle"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/edge_g2"
+                    android:layout_below="@id/edge_angle"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"/>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/edge_b1"
+                    android:layout_below="@id/edge_angle"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom bar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#696969" />
+
+        <ImageButton
+            android:id="@+id/btn_skier"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="2dp"
+            android:background="#696969"
+            android:src="@drawable/skier4"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_stats"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toRightOf="@id/btn_skier"
+            android:background="#696969"
+            android:src="@drawable/stats5" />
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/circle2" />
+
+        <ImageButton
+            android:id="@+id/btn_gear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/gear6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp" />
+
+        <ImageView
+            android:id="@+id/mountain"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mountains"
+            android:layout_toLeftOf="@id/btn_gear"
+            android:layout_marginRight="60dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

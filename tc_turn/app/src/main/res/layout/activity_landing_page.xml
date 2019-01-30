@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandingPageActivity"
+    android:background="@drawable/bknd_main7">
+
+    <!-- Top bar -->
+    <ImageView
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#696969" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/house6"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"/>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/boot2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="7dp"/>
+
+    <!-- Bottom Bar -->
+    <ImageView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#696969"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/btn_skier"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="#696969"
+        android:src="@drawable/skier4"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_stats"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/btn_skier"
+        android:background="#696969"
+        android:src="@drawable/stats5" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/circle2" />
+
+    <ImageButton
+        android:id="@+id/btn_gear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gear6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="4dp" />
+
+
+    <ImageView
+        android:id="@+id/mountain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/mountains"
+        android:layout_toLeftOf="@id/btn_gear"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_turn500" />
+
+
+
+</RelativeLayout>

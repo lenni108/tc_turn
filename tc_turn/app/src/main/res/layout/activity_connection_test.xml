@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectActivity"
+    android:background="@drawable/bknd_main7">
+
+    <!-- Top bar -->
+    <ImageView
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#696969" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/house6"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"/>
+
+    <ImageView
+        android:id="@+id/img_boot_connetced"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/boot2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:visibility="gone"/>
+
+    <!-- Middle -->
+    <!-- Connect -->
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="52dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:text="Connect"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#696969"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="0000000000000"
+        android:textColor="#000000"
+        android:background="#000000"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="47dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp"
+        android:paddingRight="35dp"/>
+
+
+    <!-- Pressure -->
+    <!--<ImageView-->
+        <!--android:layout_width="290dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_below="@id/top_bar"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="244dp"-->
+        <!--android:background="#000000" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/black_bar"-->
+        <!--android:layout_width="270dp"-->
+        <!--android:layout_height="26dp"-->
+        <!--android:layout_below="@id/top_bar"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginTop="254dp"-->
+        <!--android:layout_marginRight="50dp"-->
+        <!--android:layout_marginBottom="50dp"-->
+        <!--android:background="#d3d3d3" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/pressure_bar"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_below="@id/top_bar"-->
+        <!--android:layout_marginLeft="200dp"-->
+        <!--android:layout_marginTop="254dp"-->
+        <!--android:background="#f84400" />-->
+
+    <TextView
+        android:id="@+id/tv_pressure_test"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:textSize="25dp"
+        android:layout_below="@id/top_bar"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:text="       Move Forward"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:background="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_connect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Pressure Test"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Balanced"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="130dp"-->
+        <!--android:layout_below="@id/pressure_bar"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:textColor="#080808"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="15sp"-->
+        <!--/>-->
+
+    <!-- Shready? -->
+    <Button
+    android:id="@+id/btn_start_recording"
+    android:layout_width="230dp"
+    android:layout_height="60dp"
+    android:layout_above="@id/bottom_bar"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="52dp"
+    android:background="#f84400"
+    android:text="Are you shready?"
+    android:textColor="#000000"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="235dp"
+        android:layout_height="68dp"
+        android:layout_above="@id/bottom_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:background="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_start_analyze"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/bottom_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="152dp"
+        android:background="#f84400"
+        android:text="Analyze your Run"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_analyze"
+        android:layout_width="235dp"
+        android:layout_height="68dp"
+        android:layout_above="@id/bottom_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="148dp"
+        android:background="@android:color/black"
+        android:visibility="gone"/>
+
+    <!-- Bottom Bar -->
+    <ImageView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#696969"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageButton
+        android:id="@+id/btn_skier"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="#696969"
+        android:src="@drawable/skier4"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_reconnectL"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@id/btn_skier"
+        android:background="#696969"
+        android:src="@drawable/stats5" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="11dp"
+        android:src="@drawable/circle2" />
+
+    <ImageButton
+        android:id="@+id/btn_reconnectR"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gear6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="4dp" />
+
+
+    <ImageView
+        android:id="@+id/mountain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/mountains"
+        android:layout_toLeftOf="@id/btn_reconnectR"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

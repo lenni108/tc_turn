@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectActivity">
+
+    <Button
+        android:id="@+id/btn_start_recording"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="150dp"
+        android:text="Start Recording" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="0dp"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="0dp"
+        android:text="Disconnect" />
+
+    <Button
+        android:id="@+id/btn_reconnectL"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="0dp"
+        android:text="Reconnect L" />
+
+
+    <Button
+        android:id="@+id/btn_reconnectR"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:text="Reconnect R" />
+
+    <Button
+    android:id="@+id/btn_export_data"
+    android:layout_width="200dp"
+    android:layout_height="50dp"
+    android:layout_gravity="bottom|center_horizontal"
+    android:layout_marginBottom="100dp"
+    android:text="Export Data" />
+
+    <Button
+        android:id="@+id/btn_start_analyze"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="100dp"
+        android:text="Analyze" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Collection App"
+        android:backgroundTint="@color/colorAccent"
+        android:textSize="34dp"/>
+
+    <TextView
+        android:id="@+id/tv_statusL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="DISCONNECTED"
+        android:textColor="#ff0000"
+        android:textFontWeight="bold"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_statusR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="DISCONNECTED"
+        android:textColor="#ff0000"
+        android:textFontWeight="bold"
+        android:layout_marginLeft="150dp"
+        />
+
+    <EditText
+        android:id="@+id/et_filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:textAllCaps="false" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:minHeight="1000dp"
+        android:layout_marginTop="70dp">
+
+
+        <TextView
+            android:id="@+id/tv_log"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+
+</FrameLayout>
